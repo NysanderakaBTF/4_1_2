@@ -1,7 +1,7 @@
 #pragma once
 #include "class_2.h"
 class class_3 :
-	public class_2
+	private class_2
 {
 private:
 	int num;

@@ -9,9 +9,7 @@ int main()
 {
     string n; int a;
     cin >> n >> a;
-    class_1* p;
-    class_4 c4(n, a);
-    p = &c4;
+    class_1* p= ((class_1*)((class_2*)((class_3*)new class_4(n, a))));
     p->class_1::show_priv();
     ((class_2*)p)->class_2::show_priv();
     ((class_3*)p)->class_3::show_priv();
